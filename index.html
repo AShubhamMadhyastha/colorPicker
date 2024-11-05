@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Color Picker</h1>
+        </header>
+        
+        <!-- Color Picker Section -->
+        <section class="color-picker">
+            <label for="colorPicker">Pick a Color:</label>
+            <input type="color" id="colorPicker">
+            <div class="color-display">
+                <p><strong>Color Code:</strong> <span id="colorCode">#000000</span></p>
+                <p id="contrastRatio"></p>
+            </div>
+        </section>
+        
+        <!-- Color Format & Presets -->
+        <section class="settings">
+            <div class="format">
+                <label for="colorFormat">Color Format:</label>
+                <select id="colorFormat">
+                    <option value="hex">Hex</option>
+                    <option value="rgb">RGB</option>
+                    <option value="hsl">HSL</option>
+                </select>
+            </div>
+
+            <div class="presets">
+                <h3>Color Presets</h3>
+                <div class="color-presets">
+                    <button class="preset" style="background-color: #ff0000;"></button>
+                    <button class="preset" style="background-color: #00ff00;"></button>
+                    <button class="preset" style="background-color: #0000ff;"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gradient Picker -->
+        <section class="gradient-picker">
+            <h2>Pick a Gradient</h2>
+            <label for="colorStart">Start Color:</label>
+            <input type="color" id="colorStart">
+            <label for="colorEnd">End Color:</label>
+            <input type="color" id="colorEnd">
+            <p id="gradientDisplay">Gradient Preview</p>
+        </section>
+
+        <!-- Save & Share Section -->
+        <section class="actions">
+            <button id="saveColor">Save Color</button>
+            <button id="copyColor">Copy Color Code</button>
+            <button id="shareColor">Share Color</button>
+        </section>
+
+        <!-- Theme Toggle -->
+        <section class="theme-toggle">
+            <button id="themeToggle">Toggle Dark Mode</button>
+        </section>
+
+        <!-- Color History Section -->
+        <section class="color-history">
+            <h2>Color History</h2>
+            <div id="colorHistory" class="history-container"></div>
+        </section>
+
+        <!-- Image Upload for Dominant Color -->
+        <section class="image-upload">
+            <h2>Upload Image for Dominant Color</h2>
+            <input type="file" id="imageUpload">
+            <p>Dominant Color: <span id="dominantColor">None</span></p>
+        </section>
+
+        <!-- Color Blindness Simulation -->
+        <section class="color-blindness">
+            <button id="simulateColorBlindness">Simulate Color Blindness</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2,
+section h3,section p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="color"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+select:focus, button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:active {
+    background-color: #388E3C;
+}
+
+/* Color Presets */
+.color-presets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.preset {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.preset:hover {
+    transform: scale(1.1);
+}
+
+/* Gradient Preview */
+#gradientDisplay {
+    background: linear-gradient(45deg, #ff0000, #0000ff);
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.container.dark-mode {
+    background-color: #444;
+}
+
+button.dark-mode {
+    background-color: #555;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #666;
+}
+
+/* Color History */
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/* Color Blindness Simulation */
+.color-blindness button {
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    text-align: center;
+}
+
+/* Action Buttons Section */
+.actions {
+    display: flex;
+    justify-content: space-between; /* Space the buttons evenly */
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 20px; /* Adds some spacing from the other sections */
+}
+
+.actions button {
+    width: 30%; /* Make each button take up 30% of the row's width */
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; /* Center text in the buttons */
+}
+
+/* Hover effect for buttons */
+.actions button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Active effect for buttons */
+.actions button:active {
+    background-color: #388E3C;
+}
+
+/* Color Picker Section */
+.color-picker label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.color-display p {
+    font-size: 1em;
+    color: #333;
+}
+
+.color-display span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Settings Section */
+.settings .format,
+.settings .presets {
+    margin-bottom: 15px;
+}
+
+.settings .format select {
+    width: 100%;
+}
+
+.settings .presets h3 {
+    font-size: 1.1em;
+}
+
+.settings .color-presets {
+    justify-content: space-evenly;
+}
+
+/* Image Upload Section */
+.image-upload input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Color History Section */
+.color-history h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Gradient Picker */
+.gradient-picker input[type="color"] {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+/* Contrast Ratio */
+#contrastRatio {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
+
